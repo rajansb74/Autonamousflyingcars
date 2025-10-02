@@ -37,7 +37,7 @@ main {
     flex: 1;
 }
 
-body::before {
+body.home::before {
     content: "";
     position: absolute;
     background-image: url('Photos/background.jpg');
@@ -76,7 +76,7 @@ body::before {
     margin-top: auto;
     background-color: #0A74DA;
     color: white;
-    padding: 6px;
+    padding: 20px;
     box-sizing: border-box;
 
 
@@ -127,6 +127,38 @@ body {
     flex-direction: column;
     justify-content: space-between;
     min-height: 100vh;
+}
+
+#logo {
+    position: absolute;
+    top: 15px;
+    left:20px;
+    height:60px;
+    width:auto;
+    z-index:1000;
+
+}
+
+body.history::before,
+body.history::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    z-index: -1;
+    background-size: cover;
+    background-position: center;
+}
+
+body.history::before {
+    left: 0;
+    background-image: url("Photos/am_l.png") ;
+}
+
+body.history::after {
+    right: 0;
+    background-image: url("Photos/ConvairCar_Model_118.jpg");
 }
 
 
