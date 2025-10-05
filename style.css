@@ -71,8 +71,8 @@ body.home::before {
     text-align: left;
     bottom: 0;
     position: relative;
-    width: 300%;
-    height: 300px;
+    width: 200%;
+    height: 200px;
     margin-top: auto;
     background-color: #0A74DA;
     color: white;
@@ -89,22 +89,47 @@ body.home::before {
 }
 
 #vision-statement {
-    font-size: 1.5vw;
+    font-size: clamp(1rem, 1.5vw, 2rem);
     text-align: center;
-    color: #ffffff;
+    color: #fff;
     margin: 0 auto;
-    position: relative;
-    height: 200%;
-    left: 10%;
-    transform: translate(5%, -780%);
+    position: absolute;
+    top: 50%;
+    left: -5%;
+    transform: translate(50%, -50%);
     font-family: "roboto", sans-serif;
     background-color: rgba(20, 20, 20, 0.6);
-    padding: 20px 40px;
+    padding: 1.5rem 3rem;
     border-radius: 20px;
     display: block;
-    box-shadow:0 0 20px rgba(0,240,255,0.6);
-    max-width: 90%;
+    box-shadow: 0 0 20px rgba(0, 240, 255, 0.6);
+    max-width: 80%;
+
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in-out forwards, float 6s ease-in-out infinite alternate;
+
 }
+
+ @keyframes float {
+     0%, 100% {
+         transform: translate(50%, -50%) translateY(0);
+     }
+     50% {
+         transform: translate(50%, -50%) translateY(-15px);
+     }
+ }
+
+ @keyframes fadeIn {
+
+     from { opacity: 0}
+     to {
+         opacity: 1;
+     }
+
+ }
+
+
+
 
 #eco {
     width: 200px;
@@ -161,6 +186,51 @@ body.history::after {
     background-image: url("Photos/ConvairCar_Model_118.jpg");
 }
 
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #00f2ff;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.hamburger {
+    display: none;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 30px;
+    height: 22px;
+    z-index: 1001;
+
+}
+
+
+
+@media (max-width: 768px) {
+
+    .hamburger  {
+        display: flex;
+    }
+    #search {
+        display: block;
+        width: 30%;
+        margin: 1rem auto;
+    }
+
+    .home-nav {
+        position: fixed;
+        top: 70px;
+        right: -100px;
+        background: rgba(0,0,40,0.95);
+        flex-direction: column;
+        align-items: center;
+        width: 70%;
+        height: 100vh;
+        gap: 2rem;
+        transition: right 0.4s ease-in-out;
+    }
+}
 
 
 
