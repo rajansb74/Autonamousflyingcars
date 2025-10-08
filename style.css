@@ -249,22 +249,31 @@ body.history::after {
         flex-direction: column;
         align-items: center;
         width: 70%;
-        height: 100vh;
-        gap: 2rem;
+        height: auto;
+        gap: 0.1rem;
         transition: right 0.4s ease-in-out;
         z-index: 1001;
         opacity: 95%;
         color: white;
         border-radius: 15%;
+        display: flex;
+        justify-content: flex-start;
+        padding-top: 1rem;
+
+
     }
     .home-nav a {
         color: white;
         text-decoration: none;
         font-weight: 600;
-        display: block ;
-        text-align: center;
-        margin:0.1rem 0;
-        padding:0.3rem 0;
+        display: flex;
+        padding:0.1rem 0;
+        gap: 0.1rem;
+    }
+    .home-nav h3 {
+        margin: 0;
+        padding: 0;
+
 
     }
     .home-nav.active {
