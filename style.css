@@ -377,6 +377,101 @@ body.Perspective::before {
 
 }
 
+#contact-title {
+    font-size: 50px;
+    margin-left: 90px;
+    font-family: "roboto", sans-serif;
+    background-color: rgba(46, 46, 46, 0.7);
+    padding: 20px 40px;
+    border-radius: 30px;
+    display: inline-block;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    position: fixed;
+    bottom: 23rem;
+
+
+     }
+
+body.contact::before,
+body.contact::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    z-index: -1;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.4;
+}
+
+body.contact::before {
+    left: 0;
+    background-color: grey;
+}
+
+body.contact::after {
+    right: 0;
+    background-color: #0A74DA;
+}
+
+
+#First-name {
+     display: flex;
+     width: 30%;
+     margin: 1rem auto;
+     border-radius: 40px;
+     height: 45px;
+     padding: 5px 15px;
+
+}
+#Last-name {
+     display: block;
+     width: 30%;
+     margin: 1rem auto;
+     border-radius: 40px;
+     height: 45px;
+     padding: 5px 15px;
+}
+#Email {
+     display: block;
+     width: 30%;
+     margin: 1rem auto;
+     border-radius: 40px;
+     height: 45px;
+     padding: 5px 15px;
+}
+#Comments {
+     display: block;
+     width: 30%;
+     margin: 1rem auto;
+     border-radius: 40px;
+     height: 45px;
+     padding: 5px 15px;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 40%;max-width: 400px;
+    padding: 2rem;
+    border-radius: 20px;
+
+
+
+}
+form.contactform {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+
+
+}
+
 
 @media (max-width: 768px) {
 
@@ -544,6 +639,9 @@ body.Perspective::before {
      margin: 40rem auto;
      max-width: 80%;
      }
+
+
+
 
 
 
