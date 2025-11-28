@@ -4,14 +4,19 @@ nav.home-nav {
     justify-content: space-evenly;
     flex-wrap: wrap;
     gap: 9rem;
-    margin-left: 300px;
-    padding: 1rem 2rem;
+    margin-left: 600px;
+    padding: 1rem 1rem;
+
 
 
 }
 .home-nav a {
     text-decoration: none;
-    color: white;
+    color: #C2C2C2
+;
+
+;
+
 }
 
 
@@ -33,6 +38,7 @@ body {
     flex-direction: column;
     position: relative;
     min-height: 100vh;
+    font-family: 'Roboto', Arial, sans-serif;
 }
 
 main {
@@ -136,6 +142,25 @@ body.home {
 
 }
 
+#Learnmore {
+
+    line-height: 1.5;
+    text-align: center;
+    color: #fff;
+    margin: 0 auto;
+    left: 10%;
+    bottom: 250px;
+    position: relative;
+    font-family: "roboto", Helvetica, sans-serif;
+    background-color: rgba(20, 20, 20, 0.8);
+    padding: 1.0rem 1rem;
+    border-radius: 100px;
+    display: block;
+    max-width: 10%;
+    opacity: 1;
+
+}
+
  @keyframes float {
      0%, 100% {
          transform: translate(50%, -50%) translateY(0);
@@ -161,8 +186,31 @@ body.home {
     width: 200px;
     border-radius: 70%;
     object-fit: cover;
-    transform: translateY(-120px);
+    transform: translateY(-180px);
 
+
+
+}
+
+#plane-from-above {
+    width: 200px;
+    border-radius: 70%;
+    object-fit: cover;
+    transform: translateY(-120px);
+    position: absolute;
+    bottom: 15px;
+    right: 300px;
+
+}
+
+#Map {
+    width: 400px;
+    border-radius: 8%;
+    object-fit: cover;
+    transform: translateY(-120px);
+    position: absolute;
+    bottom: 15px;
+    right: 140px;
 
 }
 
@@ -269,7 +317,7 @@ body.history::after {
 }
 
 .benefits-header {
-    bottom: 27vw;
+    bottom: 40px;
     left: 350px;
     background-color: rgba(46, 46, 46, 0.5);
     border-radius: 4px;
@@ -282,8 +330,8 @@ body.history::after {
 }
 
 .emerging-challenges-header {
-    bottom: 42vw;
-    left: 72vw;
+    bottom: 300px;
+    left: 1300px;
     background-color: rgba(46, 46, 46, 0.5);
     border-radius: 4px;
     width: 80px;
@@ -302,7 +350,7 @@ body.history::after {
     font-size: 20px;
     max-width: 40%;
     background-color: rgba(46, 46, 46, 0.8);
-    padding: 1.5rem 2.5rem;*
+    padding: 1.5rem 2.5rem;
     border-radius: 100px;
     display: block;
     box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
@@ -395,7 +443,7 @@ body.history::after {
     border: 3px solid white;
     position: fixed;
     bottom: 10rem;
-    right: 53vw;
+    right: 55%;
 }
 #Emerging-challenges {
     font-family: 'Orbitron' , sans-serif;
@@ -409,7 +457,7 @@ body.history::after {
     border: 3px solid white;
     position: fixed;
     bottom: 23rem;
-    right: 2vw;
+    right: 4%;
 }
 
 
@@ -433,24 +481,25 @@ body.Perspective::before {
 
 }
 
-#Reference1{
+#Reference1, #Reference2{
     font-size: 22px;
     padding: 1.5rem 2.5rem;
-    position: fixed;
-    bottom: 11rem;
-    max-width: 40%;
+    background: rgba(240,240,240,0.6);
+    border-radius:12px;
+    line-height: 1.3;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+    border-left: 4px solid #5a5a5a;
 
 }
 
-#Reference2{
-    font-size: 22px;
-    padding: 1.5rem 2.5rem;
-    position: fixed;
-    bottom: 10rem;
-    max-width: 40%;
-    right: 2rem;
-
+.references-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding: 3rem 6rem;
 }
+
+
 
 #contact-title {
     font-size: 50px;
@@ -559,6 +608,46 @@ form.contactform {
 
 }
 
+#iframe {
+   position: fixed;
+   bottom: 28rem;
+   width: 560px;
+   height: 315px;
+   left: 60vw;
+
+}
+
+#perspective-statement {
+    font-family: "fantasy" , sans-serif;
+    font-size: 60px;
+    padding: 20px 40px;
+    border-radius: 50px;
+    display: block;
+    color: black;
+    position: absolute;
+    margin: 2rem 90px 0 90px;
+    bottom: 40rem;
+
+}
+
+#reference-statement {
+    font-family: "fantasy", sans-serif;
+    font-size: 40px;
+    padding: 20px 40px;
+    border-radius: 50px;
+    display: block;
+    color: black;
+    position: absolute;
+    margin: 2rem 90px 0 90px;
+    bottom: 48rem;
+}
+body.reference {
+    background: linear-gradient(to bottom, #f7f7f7, #e6e6e6);
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
 
 @media (max-width: 768px) {
 
@@ -630,6 +719,38 @@ form.contactform {
         transform: translateX(-50%);
         position: absolute;
         font-size: 30px;
+
+    }
+
+        #Learnmore {
+
+        line-height: 1.5;
+        text-align: center;
+        color: #fff;
+        margin: 0 auto;
+        left: 10%;
+        bottom: 50px;
+        position: relative;
+        font-family: "roboto", Helvetica, sans-serif;
+        background-color: rgba(20, 20, 20, 0.8);
+        padding: 1.0rem 1rem;
+        border-radius: 100px;
+        display: block;
+        max-width: 20%;
+        opacity: 1;
+        font-size: 16px;
+
+     }
+
+
+    #perspective-statement {
+        top: 70px;
+        text-align: left;
+        width: 200px;
+        transform: translateX(-50%);
+        position: absolute;
+        font-size: 30px;
+        left: 20px;
     }
 
       #footer-history {
@@ -696,12 +817,23 @@ form.contactform {
 
      }
 
+     #iframe {
+     top: 13rem;
+     left: 31vw;
+     width: 310px;
+     height: 150px;
+     position: absolute;
+     }
+
+
+
+
      .white-bottom {
          height: 200vh;
          background-color: white;
-         position: relative;
          top:80vh;
          z-index: 0;
+         width: 100%;
 
      }
 
@@ -717,6 +849,37 @@ form.contactform {
 
      }
 
+     .header-row {
+     position: relative;
+     }
+
+    .benefits-header {
+        top: 610px;
+        left: 200px;
+        background-color: rgba(46, 46, 46, 0.5);
+        border-radius: 30px;
+        width: 65px;
+        height: 55px;
+        border: 3px solid white;
+        box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+        padding: 0.3rem 0.7rem;
+        position: absolute;
+    }
+
+    .emerging-challenges-header {
+        top: 100px;
+        left: 200px;
+        background-color: rgba(46, 46, 46, 0.5);
+        border-radius: 30px;
+        width: 85px;
+        height: 65px;
+        border: 3px solid white;
+        box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+        padding: 0.3rem 0.7rem;
+        position: absolute;
+    }
+
+
      #history-text2 {
      position: absolute;
      right: 1%;
@@ -727,9 +890,121 @@ form.contactform {
      max-width: 80%;
      }
 
+     #Emerging-challenges {
+     position: relative;
+     top: 11rem;
+     margin-bottom: 1rem;
+     padding: 1rem 2rem;
+      border: 1px solid black;
+     border-radius: 2rem;
+     max-width: 80%;
+     text-align: center;
+     left: 15px;
+     }
 
+
+     #Benefits {
+     position: relative;
+     top: 15rem;
+     margin-bottom: 1rem;
+     padding: 1rem 2rem;
+      border: 1px solid black;
+     border-radius: 2rem;
+     max-width: 80%;
+     text-align: center;
+     left: 15px;
+}
+
+
+     #plane-from-above {
+     width: 150px;
+     border-radius: 70%;
+     object-fit: cover;
+     transform: translateY(-120px);
+     position: absolute;
+     bottom: -100vw;
+     right: 30px;
 
 }
+
+
+
+
+     .early-developments h3 {
+
+     margin-top: 350px;
+     margin-left: 180px;
+     background-color: rgba(46, 46, 46, 0.5);
+     border-radius: 8px;
+     max-width: 21%;
+     max-height: 15%;
+     border: 3px solid white;
+     box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+     padding: 0.3rem 0.7rem;
+     }
+
+     .references-wrapper {
+         grid-template-columns: 1fr;
+         gap: 1.5rem;
+         padding: 0;
+         margin-bottom: 1rem;
+         margin-top: 5rem;
+     }
+
+     #Reference1, #Reference2 {
+         font-size: 15px;
+         padding: 1rem 1.0rem;
+         line-height: 1.8;
+         border-radius: 10px;
+         max-width: 85%;
+     }
+
+     #Reference1 a, #Reference2 a{
+         font-size: 16px;
+         word-break: break-all;
+     }
+
+      body.reference {
+          padding-bottom: 300px;
+          height: auto;
+      }
+
+        #reference-statement {
+        font-family: "fantasy", sans-serif;
+        font-size: 40px;
+        padding: 20px 40px;
+        border-radius: 50px;
+        display: block;
+        color: black;
+        position: absolute;
+        margin: 2rem 90px 0 90px;
+        bottom: 117rem;
+    }
+
+
+
+
+
+
+
+
+
+
+
+     }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
