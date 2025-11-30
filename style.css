@@ -722,6 +722,46 @@ body.reference {
         right: 0;
 
     }
+
+    .home-nav1 {
+        position: fixed;
+        top: 70px;
+        right: -100%;
+        background: black;
+        flex-direction: column;
+        align-items: center;
+        width: 70%;
+        height: auto;
+        gap: 0.1rem;
+        transition: right 0.4s ease-in-out;
+        z-index: 1001;
+        opacity: 95%;
+        color: white;
+        border-radius: 15%;
+        display: flex;
+        justify-content: flex-start;
+        padding-top: 1rem;
+
+
+    }
+    .home-nav1 a {
+        color: white;
+        text-decoration: none;
+        font-weight: 600;
+        display: flex;
+        padding:0.1rem 0;
+        gap: 0.1rem;
+    }
+    .home-nav1 h3 {
+        margin: 0;
+        padding: 0;
+
+
+    }
+    .home-nav1.active {
+        right: 0;
+
+    }
     #vision-statement {
         top: 220px;
         text-align: center;

@@ -1,8 +1,9 @@
+
 const hamburger = document.querySelector('.hamburger');
+const navMenus = document.querySelectorAll('.home-nav, .home-nav1');
 
-const nav = document.querySelector('.home-nav');
 
-hamburger.addEventListener('click', ()=> {
 
-    nav.classList.toggle('active');
-});
+hamburger.addEventListener('click', () => {
+    navMenus.forEach(nav => nav.classList.toggle('active'));}
+);
